@@ -1,0 +1,61 @@
+<!-- Take this file and open it on a browser, then open the console
+inside developer tools -->
+<html style="text-align: left">
+
+<body>
+    <button onclick="click1()">enveto1</button>
+
+    <button onmousemove="moverMouse()" style="margin-top: 2%;">enveto2 </button>
+
+    <button onblur="escucha()" id="labelClick">Da click aqui</button>
+
+
+
+</body>
+
+
+</html>
+<script>
+    (function () {
+        "use strict";
+    })()
+
+
+    function click1() {
+        console.log('primer button')
+        alert('Preciono primer boton')
+    }
+
+    function moverMouse() {
+        console.log('segundo button')
+        alert('Preciono segundo boton')
+    }
+
+    function escucha() {
+        console.log('Click Me')
+        document.getElementById('labelClick').innerHTML = 'Bien echo, dio click !! ';
+    }
+    // function posicionMouse() {
+    //     var e = window.event;
+
+    //     var posX = e.clientX;
+    //     var posY = e.clientY;
+
+    //     document.Form1.posx.value = posX;
+    //     document.Form1.posy.value = posY;
+
+    //     var t = setTimeout(mouse_position, 100);
+
+    // }
+</script>
+
+<!-- Now it's your turn to make some changes
+    - Draw some buttons, make your way between the click events and let me know they are pressed
+    - What other events are you familiar with? Show it
+
+    ****************************************************
+    ****               BONUS POINTS                 ****
+    ****      keep me informed of the pointer's     ****
+    ****      position, make it show on screen      ****
+    ****************************************************
+-->

@@ -1,0 +1,53 @@
+<!-- Take this file and open it on a browser, then open the console
+    inside developer tools -->
+<script>
+    (function () {
+        "use strict";
+    })()
+
+    var listaDeValores = []
+
+    function agregarValor() {
+        var nuevoValor = document.getElementById('entradaDatos').value;
+        if (null != nuevoValor & undefined != nuevoValor & ""!=nuevoValor) {
+            listaDeValores.push(nuevoValor);
+            console.log(listaDeValores)
+            document.getElementById('resultado').innerHTML = listaDeValores
+        }else{
+            alert("Agregar valor al campo");
+        }
+
+    }
+    function ocultarBoton() {
+        var inactivar = document.getElementById('entradaDatos').setAttribute("disabled","false");
+    }
+    function mostrarCampo() {
+        var activar = document.getElementById('entradaDatos').removeAttribute("disabled").setAttribute("enabled","true");
+    }
+</script>
+
+<button type="button" onclick="agregarValor()"> Agregar valor a la lista </button>
+<button type="button" onclick="ocultarBoton()"> Inactivar campo </button>
+<button type="button" onclick="mostrarCampo()"> Habilitar campo </button>
+
+
+<br>
+<br>
+
+<input type="text" id="entradaDatos">
+
+<br>
+<br>
+
+<label> value: </label>
+<label id="resultado"></label>
+<!-- Now it's your turn to make some changes
+    - Add at least 2 DOM elements, via code, DOH
+    - Make a button, ask a quantity and add those elements
+
+    ****************************************************
+    ****               BONUS POINTS                 ****
+    ****  Keep it funny, make a list, do a drawing  ****
+    ****      show me you can dominate the DOM      ****
+    ****************************************************
+-->

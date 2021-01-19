@@ -1,0 +1,107 @@
+<!-- Take this file and open it on a browser, then open the console
+    inside developer tools -->
+<script>
+    class Persona {
+  constructor(pimerNombre, segundoNombre, edad, sexo) {
+    this.nombre = {pimerNombre,segundoNombre};
+    this.edad = edad;
+    this.sexo = sexo;
+  }
+
+  getNombrePersona(){
+      return this.nombre.pimerNombre;
+  }
+  setNombrePersona(desc){
+      this.nombre.pimerNombre=desc;
+  }
+ }
+
+
+    var Animal = (function(type) {
+        this.type = type;
+        this.raza= 'chihuhua';
+        this.nombre= 'Chikis';
+       
+    });
+
+    // Persona = (function(edad) {
+    //     this.edad = edad;
+    //     this.nombre= 'Miguel Angel';
+    //     this.apellidos= 'Alvarez Sánchez';
+    //     this.direccion= 'direccion 1';
+        
+
+    // });
+
+    Animal.prototype.talk = function() {
+        console.log(`Hi, I'm an Animal, but also a ${this.type}, ${this.raza}, ${this.nombre}`);
+    };
+    Persona.prototype.test1 = function() {
+        console.log(`Hoola soy una Persona, y  tengo  ${this.edad}' años','y mi nombre es:' ${this.nombre}, ${this.apellido}`);
+    };
+
+    let rabbit = new Animal("Rabbit");
+    rabbit.talk();
+  
+
+    // let persona = new Persona("13");
+    // persona.test1();
+
+    //     function Profesor(nombrePila, apellido, edad, genero, intereses, materia) {
+    // Person.test1(this, nombrePila, apellido, edad, genero, intereses);
+
+    // this.materia = materia;
+    
+
+
+class Maestro extends Persona {
+
+  constructor(pimerNombre, segundoNombre, edad, sexo, intereses) {
+    super(pimerNombre, segundoNombre, edad, sexo, intereses);
+  }
+  getNombreMaestro() {
+    console.log(`Mi nombre es : ${this.nombre.pimerNombre+" "+this.nombre.segundoNombre}`);
+  };
+}
+let maestro = new Maestro('Edwin', 'Ediwn2', 25, 'Masculino', ['Guitarra'],"vv","gg");
+maestro.getNombreMaestro();
+
+maestro.setNombrePersona("Hola");
+maestro.getNombrePersona();
+maestro.getNombreMaestro();
+
+
+class Polygon {
+  constructor(...sides) {
+    this.sides = sides;
+  }
+  // Method
+  *getSides() {
+    for(const side of this.sides){
+      yield side;
+    }
+  }
+}
+
+const pentagon = new Polygon(1,2,3,4,5);
+
+console.log([...pentagon.getSides()]); // [1,2,3,4,5]
+
+
+
+
+</script>
+
+<!-- Now it's your turn to make some changes
+    - Refactor the previous code to use getters and settters
+    - Add at least 2 more properties
+    - Add at least 2 more methods
+    - Create a new class that inherits from Animal
+    - Override one of the methods you previously defined
+
+    ****************************************************
+    ****               BONUS POINTS                 ****
+    ****      MAKE A 2nd VERSION USING ES6 CLASSES  ****
+    ****                                            ****
+    ****************************************************
+-->
