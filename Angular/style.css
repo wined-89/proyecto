@@ -1,0 +1,201 @@
+/* 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 1;
+	padding: 1;
+	border: 1ch;
+	font-size: 100%;
+	font: inherit;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div{
+	border-color: black;
+	border:1px solid;
+	padding-left: 50%;
+}
+  code {
+	background: #2db34a;
+	border-radius: 6px;
+	color: #fff;
+	display: block;
+	font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+	padding: 24px 15px;
+	text-align: center;
+  }
+  header,
+  section,
+  aside,
+  footer {
+	margin: 0 1.5% 24px 1.5%;
+  }
+  section {
+	float: left;
+	width: 63%;
+  }
+  aside {
+	float: right;
+	width: 30%;
+  }
+  footer {
+	clear: both;
+	margin-bottom: 0;
+  } */
+
+* html{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 14px;
+	
+}
+a:hover {
+	color: red;
+ }
+body{
+	background-color: #4e4e4e;
+}
+.seccion1:hover .seccion3:hover{
+	height: 90%;
+}
+
+
+  .article {
+	background: #d8d8d8;
+	border-radius: 28px;
+	border: 5px solid #7a7a7a;
+    color: #ffffff;
+	display: block;
+	font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+	padding: 10px;
+	padding-block: initial;
+	text-align: center;
+	width: 91%;
+    height: 108px;
+  }
+  .foter {
+	background: #d8d8d8;
+	border-radius: 28px;
+	border:5px solid #7a7a7a;
+    color: #ffffff;
+	display: block;
+	font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+	padding: 10px;
+	padding-block: initial;
+	text-align: center;
+  }
+  .header2 {
+	background: #d8d8d8;
+	border-radius: 28px;
+	border: 5px solid #7a7a7a;
+    color: #ffffff;
+	display: block;
+	font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+	padding: 10px;
+	padding-block: initial;
+	text-align: center;
+  }
+
+  code {
+	background: #7a7a7a;
+	border-radius: 16px;
+	color: #fff;
+	display: block;
+	padding: 24px 15px;
+	text-align: center;
+  }
+  section,
+  aside,
+  footer {
+	margin: 0 1.5% 24px 1.5%;
+  }
+  header{
+	  font-size: 46px;
+  }
+  section {
+	display: inline-block;
+	width: 32%;
+	padding-top: 11px;
+  }
+ footer {
+  clear: both;
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+  aside {
+	float: right;
+	width: 30%;
+	font-size: 10px;
+	padding-top: 10px;
+
+  }
+
+  [class*="r"]{
+	background-color: magenta;
+  }
+  nav[class*='a'] :not(r){
+	background-color: blue;
+
+  }
+ 
+
+  [class="header2"]{
+	  background-color: cyan;
+  }
+  /* :not(a) { 
+	  background-color: coral;
+   } */
+  nav {
+	float: left;
+	width: 32%;
+	padding-top: 10px;
+	font-size: 12px;
+  }
+  
+  
+  .group {
+	background: #eaeaed;
+	border-radius: 6px;
+	clear: both;
+	*zoom: 1;
+  }
+
+  .group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
